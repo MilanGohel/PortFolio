@@ -39,7 +39,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json());
 app.use(cors());
 
-console.log(staticFilesPath)
+// console.log(staticFilesPath)
 app.post('/email/send', sendEmail);
 
 app.get('/download', function(req, res) {
